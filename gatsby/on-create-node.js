@@ -2,6 +2,7 @@
 
 const _ = require('lodash');
 const { createFilePath } = require('gatsby-source-filesystem');
+const slug = require('url-slug');
 
 const onCreateNode = ({ node, actions, getNode }) => {
   const { createNodeField } = actions;
@@ -15,7 +16,7 @@ const onCreateNode = ({ node, actions, getNode }) => {
         value: `/${dirname}/${node.frontmatter.slug}`
       });
     } else {
-      const value = createFilePath({ node, getNode });
+      const value = `/${slug(node.frontmatter.category)}/${slug(node.frontmatter.title)}`;
       createNodeField({
         node,
         name: 'slug',

@@ -1,0 +1,24 @@
+---
+author: admin
+comments: true
+date: 2010-03-22 14:21:19+00:00
+template: "post"
+draft: false
+link: http://www.procomp-blog.ru/databases/firebird/
+slug: firebird
+title: Firebird
+description: "146"
+category:
+- FireBird
+- Базы данных
+tags:
+- firbird
+- sql
+---
+
+[![Firebird](http://www.procomp-blog.ru/images/LogoFirebird.gif)](http://www.procomp-blog.ru/databases/firebird)
+В этой статье начинаю небольшие серии заметок по СУБД [Firebird](http://www.firebirdsql.org/).
+Для начала хочу запечатлеть у себя в блоге то, что я давно искал для FireBird - описание языка SQL в виде глоссария. 
+Итак Глоссарий Firebird [здесь](http://www.firebirdsql.su/).
+На мой взгляд очень полезная штука, особенно если учесть что встроенной справку у FB нет.
+Для начала это всё. Если у кого-нибудь есть что дополнить, может есть у кого-нибудь файл chm или еще какой-нибудь оффлайн справочник по DSQL или PSQL FireBird'а, оставляйте свои комментарии.

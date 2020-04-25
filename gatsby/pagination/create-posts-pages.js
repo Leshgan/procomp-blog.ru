@@ -22,13 +22,13 @@ module.exports = async (graphql, actions) => {
       path: i === 0 ? '/' : `/page/${i}`,
       component: path.resolve('./src/templates/index-template.js'),
       context: {
-        currentPage: i,
+        currentPage: i + 1,
         postsLimit: postsPerPage,
         postsOffset: i * postsPerPage,
         prevPagePath: i <= 1 ? '/' : `/page/${i - 1}`,
         nextPagePath: `/page/${i + 1}`,
-        hasPrevPage: i !== 0,
-        hasNextPage: i !== numPages - 1
+        hasPrevPage: i > 0,
+        hasNextPage: i < numPages
       }
     });
   }

@@ -1,33 +1,33 @@
 'use strict';
 
 module.exports = {
-  url: 'https://lumen.netlify.com',
+  url: 'https://procomp-blog.ru',
   pathPrefix: '/',
-  title: 'Blog by John Doe',
-  subtitle: 'Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu.',
-  copyright: '© All rights reserved.',
+  title: 'Блог айтишника',
+  subtitle: '',
+  copyright: '©',
   disqusShortname: '',
-  postsPerPage: 4,
-  googleAnalyticsId: 'UA-73379983-2',
+  postsPerPage: 10,
+  googleAnalyticsId: '',
   useKatex: false,
   menu: [
     {
-      label: 'Articles',
+      label: 'Статьи',
       path: '/'
     },
     {
-      label: 'About me',
+      label: 'О блоге',
       path: '/pages/about'
     },
     {
-      label: 'Contact me',
+      label: 'Обратная связь',
       path: '/pages/contacts'
     }
   ],
   author: {
-    name: 'John Doe',
-    photo: '/photo.jpg',
-    bio: 'Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu.',
+    name: 'Алексей',
+    photo: '',
+    bio: 'Блог айтишника',
     contacts: {
       email: '',
       facebook: '#',

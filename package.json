@@ -4,6 +4,7 @@
   "description": "A minimal, lightweight and mobile-first starter for creating blazing-fast static blogs",
   "main": "n/a",
   "scripts": {
+    "create": "gatsby-post-gen",
     "develop": "yarn run clean && gatsby develop",
     "build": "yarn run clean && gatsby build",
     "deploy": "yarn run clean && gatsby build --prefix-paths && gh-pages -d public",
@@ -42,6 +43,7 @@
     "classnames": "^2.2.6",
     "codecov": "^3.6.5",
     "gatsby": "^2.20.12",
+    "gatsby-cli": "^2.11.21",
     "gatsby-link": "^2.3.2",
     "gatsby-plugin-catch-links": "^2.2.1",
     "gatsby-plugin-feed": "^2.4.1",
@@ -79,7 +81,8 @@
     "react": "^16.13.1",
     "react-disqus-comments": "^1.4.0",
     "react-dom": "^16.13.1",
-    "react-helmet": "^5.2.1"
+    "react-helmet": "^5.2.1",
+    "url-slug": "^2.3.1"
   },
   "devDependencies": {
     "@babel/core": "7.9.0",
@@ -104,6 +107,7 @@
     "eslint-watch": "6.0.1",
     "flow-bin": "^0.122.0",
     "flow-typed": "^3.1.0",
+    "gatsby-post-gen": "^1.0.0",
     "gh-pages": "2.2.0",
     "identity-obj-proxy": "3.0.0",
     "jest": "25.2.7",

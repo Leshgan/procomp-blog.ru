@@ -1,6 +1,7 @@
 // @flow strict
 import React from 'react';
 import moment from 'moment';
+import ru from 'moment/locale/ru';
 import { Link } from 'gatsby';
 import type { Edges } from '../../types';
 import styles from './Feed.module.scss';
@@ -8,6 +9,8 @@ import styles from './Feed.module.scss';
 type Props = {
   edges: Edges
 };
+
+moment.locale('ru');
 
 const Feed = ({ edges }: Props) => (
   <div className={styles['feed']}>
@@ -26,7 +29,7 @@ const Feed = ({ edges }: Props) => (
           <Link className={styles['feed__item-title-link']} to={edge.node.fields.slug}>{edge.node.frontmatter.title}</Link>
         </h2>
         <p className={styles['feed__item-description']}>{edge.node.frontmatter.description}</p>
-        <Link className={styles['feed__item-readmore']} to={edge.node.fields.slug}>Read</Link>
+        <Link className={styles['feed__item-readmore']} to={edge.node.fields.slug}>Читать</Link>
       </div>
     ))}
   </div>
