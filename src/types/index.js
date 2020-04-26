@@ -25,13 +25,13 @@ export type PageContext = {
 export type Node = {
   fields: {
     slug: string,
-    categorySlug?: string,
+    categorySlug?: string[],
     tagSlugs?: string[]
   },
   frontmatter: {
     date: string,
     description?: string,
-    category?: string,
+    category?: string[],
     tags?: string[],
     title: string,
     socialImage?: string

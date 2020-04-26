@@ -22,7 +22,7 @@ describe('Post', () => {
       html: '<p>test</p>',
       fields: {
         slug: '/test',
-        categorySlug: '/test-category',
+        categorySlug: ['/test-category'],
         tagSlugs: [
           '/test_0',
           '/test_1'
