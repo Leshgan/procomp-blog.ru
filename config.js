@@ -17,11 +17,11 @@ module.exports = {
     },
     {
       label: 'О блоге',
-      path: '/pages/about'
+      path: '/about'
     },
     {
       label: 'Обратная связь',
-      path: '/pages/contacts'
+      path: '/contact'
     }
   ],
   author: {
