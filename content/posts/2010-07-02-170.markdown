@@ -4,7 +4,7 @@ comments: true
 date: 2010-07-02 11:37:09+00:00
 template: "post"
 draft: true
-link: http://www.procomp-blog.ru/anekdoty/170/
+link: anekdoty/170/
 published: false
 slug: '170'
 title: 'Письмо мамы-блондинки дочке-блондинке:'

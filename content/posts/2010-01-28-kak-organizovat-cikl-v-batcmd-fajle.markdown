@@ -4,7 +4,7 @@ comments: true
 date: 2010-01-28 13:58:31+00:00
 template: "post"
 draft: false
-link: http://www.procomp-blog.ru/admin/kak-organizovat-cikl-v-batcmd-fajle/
+link: /admin/kak-organizovat-cikl-v-batcmd-fajle/
 slug: kak-organizovat-cikl-v-batcmd-fajle
 title: Как организовать цикл в bat или cmd файле
 description: "Как выполнять команду несколько раз в командной строке Windows"
@@ -12,8 +12,10 @@ category:
 - Администрирование
 tags:
 - командная строка
-- цикл в bat
-- цикл в cmd
+- цикл
+- bat
+- cmd
+- windows
 ---
 
 Бывают ситуации, когда нужно выполнять какую-нибудь команду несколько раз, причем количество запусков заранее известно.

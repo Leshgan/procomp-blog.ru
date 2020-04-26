@@ -4,10 +4,10 @@ comments: true
 date: 2013-05-15 07:35:59+00:00
 template: "post"
 draft: false
-link: http://www.procomp-blog.ru/admin/konvertiruem-flac-v-mp3-iz-komandnoj-stroki/
+link: /admin/konvertiruem-flac-v-mp3-iz-komandnoj-stroki
 slug: konvertiruem-flac-v-mp3-iz-komandnoj-stroki
 title: Конвертируем flac в mp3 из командной строки
-description: "639"
+description: "Немного кодинга в cmd Windows"
 category:
 - Windows
 - Администрирование
@@ -19,12 +19,12 @@ tags:
 - командная строка
 ---
 
-Решил раз и навсегда закрыть для себя вопрос конвертации *.flac музыки в mp3 формат. Используя знания из статей под тэгом [cmd](http://www.procomp-blog.ru/tag/cmd/), а именно из статей [Как организовать цикл в bat или cmd файле](http://www.procomp-blog.ru/admin/kak-organizovat-cikl-v-batcmd-fajle/) и [Как узнать размер и дату файла из командной строки](http://www.procomp-blog.ru/admin/kak-uznat-razmer-i-datu-fajla-iz-komandnoj-stroki/) подробно распишу как организовать конвертирование файлов из формата FLAC и формат MP3, находящихся в указанной в параметре cmd-скрипта папке и подпапках.
+Решил раз и навсегда закрыть для себя вопрос конвертации *.flac музыки в mp3 формат. Используя знания из статей под тэгом [cmd](/tag/cmd/), а именно из статей [Как организовать цикл в bat или cmd файле](/admin/kak-organizovat-cikl-v-batcmd-fajle/) и [Как узнать размер и дату файла из командной строки](/admin/kak-uznat-razmer-i-datu-fajla-iz-komandnoj-stroki/) подробно распишу как организовать конвертирование файлов из формата FLAC и формат MP3, находящихся в указанной в параметре cmd-скрипта папке и подпапках.
 На написание этой статьи меня подтолкнула [статья на хабре](http://habrahabr.ru/post/148171/), только я буду делать скрипт под Windows.
 Для конвертирования нам понадобятся установленные [flac](http://flac.sourceforge.net/) и [lame](http://lame.sourceforge.net/), lame качал с сайта rarewares.org
 В конце статьи я выложу архив со скриптом и нужными программами.
 
-[code lang="bash"]
+```bash
 @echo off
 echo flac2mp3.cmd [-r] папка
 echo [-r] - удалять исходные flac файлы (не обязательно)
@@ -66,13 +66,4 @@ for /f &quot;tokens=* &quot; %%i in ('metaflac.exe --show-tag=DATE %1 ') do set 
 echo lame -m j -q 0 -V 0 -s 44.1 --tt &quot;%TITLE%&quot; --tn &quot;%TRACKNUMBER%&quot; --ta &quot;%ARTIST%&quot; --tl &quot;%ALBUM%&quot; --ty &quot;%DATE%&quot; --tg &quot;%GENRE%&quot; &quot;%~d1%~p1%~n1.wav&quot; &quot;%~d1%~p1%~n1.mp3&quot;
 lame -m j -q 0 -V 0 -s 44.1 --tt &quot;%TITLE%&quot; --tn &quot;%TRACKNUMBER%&quot; --ta &quot;%ARTIST%&quot; --tl &quot;%ALBUM%&quot; --ty &quot;%DATE%&quot; --tg &quot;%GENRE%&quot; &quot;%~d1%~p1%~n1.wav&quot; &quot;%~d1%~p1%~n1.mp3&quot;
 exit /b 0
-[/code]
-
-
-
-
-[скачать архив](http://www.procomp-blog.ru/wp-content/uploads/flac2mp3.zip)
-
-
-
-
+```

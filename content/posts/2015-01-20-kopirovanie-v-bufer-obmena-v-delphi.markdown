@@ -4,10 +4,10 @@ comments: true
 date: 2015-01-20 05:30:58+00:00
 template: "post"
 draft: false
-link: http://www.procomp-blog.ru/programming/kopirovanie-v-bufer-obmena-v-delphi/
+link: /programming/kopirovanie-v-bufer-obmena-v-delphi
 slug: kopirovanie-v-bufer-obmena-v-delphi
 title: Копирование в буфер обмена в Delphi
-description: "739"
+description: "Обычное копирование в буфер обмена командой"
 category:
 - Delphi
 - Программирование
@@ -16,13 +16,13 @@ tags:
 ---
 
 Обычное копирование в буфер обмена командой
-[code language="delphi"]
+```pascal
 Clipboard.AsText := str;
-[/code]
+```
 работает если копируется строка с английскими символами и/или цифрами. 
 Строка из русских букв будет скопирована в неверной кодировке. 
 Вот [тут](http://www.sql.ru/forum/852176-1/pravilnoe-kopirovanie-v-bufer-obmena) нашел простое решение:
-[code lang="delphi"]
+```pascal
 type
     TMyClipboard = class(TClipboard);
 
@@ -41,4 +41,4 @@ type
       end;
     end;
   end;
-[/code]
+```

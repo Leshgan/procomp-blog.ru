@@ -4,10 +4,10 @@ comments: true
 date: 2010-03-17 07:42:43+00:00
 template: "post"
 draft: false
-link: http://www.procomp-blog.ru/freeware/svobodnoe-po/
+link: /freeware/svobodnoe-po
 slug: svobodnoe-po
 title: Свободное ПО
-description: "139"
+description: "Свободное ПО, полезные бесплатные программы, freeware"
 category:
 - Freeware
 tags:

@@ -1,0 +1,5 @@
+REGEDIT4
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\IniFileMapping\Autorun.inf]
+@="@SYS:DoesNotExist"
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\policies\Explorer]
+"NoDriveTypeAutoRun"=dword:000000DF

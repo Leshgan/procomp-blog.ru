@@ -4,10 +4,10 @@ comments: true
 date: 2013-02-14 07:21:18+00:00
 template: "post"
 draft: false
-link: http://www.procomp-blog.ru/programming/delphi-vyzov-procedury-po-stroke-s-eyo-nazvaniem/
+link: /programming/delphi-vyzov-procedury-po-stroke-s-eyo-nazvaniem
 slug: delphi-vyzov-procedury-po-stroke-s-eyo-nazvaniem
 title: Delphi. Вызов процедуры по строке с её названием
-description: "655"
+description: "Как вызвать процедуру в Delphi если название процедуры не известно заранее"
 category:
 - Delphi
 - Программирование
@@ -17,24 +17,24 @@ category:
 Небольшая заметка как это реализовать на **Delphi**
 
 Для начала в типах объявляем тип: 
-[code lang="delphi"]
+```pascal
 type
   myproc = procedure;stdcall;
-[/code]
+```
 
 Далее в **implementation** пишем пример процедуры, название которой будет неизвестно в момент выполнения.
 
-[code lang="delphi"]
+```pascal
 procedure Proc1;
 begin
   ShowMessage('Hello From Proc1');
 end;
-[/code]
+```
 
 
 А вот код вызова для кнопки Button1 на форме Form1:
 
-[code lang="delphi"]
+```pascal
 procedure TForm1.Button1Click(Sender: TObject);
 var
   p:myproc;
@@ -46,12 +46,12 @@ begin
   p; // вот он сам вызов процедуры
   p:=nil;
 end;
-[/code]
+```
 
 Понятно, что вместо **'Proc1'** может быть строковая переменная.
 В конце модуля экспортируем процедуру:
-[code lang="delphi"]
+```pascal
 exports Proc1;
-[/code]
+```
 
 Пожалуй вот и всё.

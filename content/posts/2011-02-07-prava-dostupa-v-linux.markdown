@@ -4,10 +4,10 @@ comments: true
 date: 2011-02-07 09:16:33+00:00
 template: "post"
 draft: false
-link: http://www.procomp-blog.ru/linux/prava-dostupa-v-linux/
+link: /linux/prava-dostupa-v-linux
 slug: prava-dostupa-v-linux
 title: Права доступа в Linux
-description: "310"
+description: "Доступное описание прав доступа в различным объектам в Linux"
 category:
 - Linux
 tags:

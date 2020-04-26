@@ -4,11 +4,11 @@ comments: true
 date: 2011-07-29 06:15:31+00:00
 template: "post"
 draft: true
-link: http://www.procomp-blog.ru/anekdoty/502/
+link: /anekdoty/502
 published: false
 slug: '502'
-title: No Content Found
-description: ""
+title: Анекдот. Мария Ивановна Арбатова
+description: "Мария Ивановна Арбатова"
 category:
 - Анекдоты
 post_format:
