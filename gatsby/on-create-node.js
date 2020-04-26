@@ -1,6 +1,5 @@
 'use strict';
 
-const _ = require('lodash');
 const slug = require('url-slug');
 
 const onCreateNode = ({ node, actions, getNode }) => {

@@ -23,9 +23,12 @@ const Feed = ({ edges }: Props) => (
           </time>
           <span className={styles['feed__item-meta-divider']} />
           <span className={styles['feed__item-meta-category']}>
-            {edge.node.frontmatter.category.map((category, i) => (
-              <Link to={edge.node.fields.categorySlug[i]} className={styles['feed__item-meta-category-link']}>{category}</Link>
-            )).reduce((prev, curr) => [prev, ', ', curr])}
+            {edge.node.frontmatter.category && edge.node.frontmatter.category.length > 1
+              ? edge.node.frontmatter.category.map((category, i) => (
+                <Link to={edge.node.fields.categorySlug[i]} key={edge.node.fields.categorySlug[i]} className={styles['feed__item-meta-category-link']}>{category}</Link>
+              )).reduce((prev, curr) => [prev, ', ', curr])
+              : <Link to = {edge.node.fields.categorySlug[0]} className={styles['feed__item-meta-category-link']}>{edge.node.frontmatter.category}</Link>
+            }
           </span>
         </div>
         <h2 className={styles['feed__item-title']}>
