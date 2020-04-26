@@ -1,6 +1,7 @@
 // @flow strict
 import React from 'react';
 import moment from 'moment';
+// eslint-disable-next-line no-unused-vars
 import ru from 'moment/locale/ru';
 import { Link } from 'gatsby';
 import type { Edges } from '../../types';
@@ -22,7 +23,9 @@ const Feed = ({ edges }: Props) => (
           </time>
           <span className={styles['feed__item-meta-divider']} />
           <span className={styles['feed__item-meta-category']}>
-            <Link to={edge.node.fields.categorySlug} className={styles['feed__item-meta-category-link']}>{edge.node.frontmatter.category}</Link>
+            {edge.node.frontmatter.category.map((category, i) => (
+              <Link to={edge.node.fields.categorySlug[i]} className={styles['feed__item-meta-category-link']}>{category}</Link>
+            )).reduce((prev, curr) => [prev, ', ', curr])}
           </span>
         </div>
         <h2 className={styles['feed__item-title']}>
