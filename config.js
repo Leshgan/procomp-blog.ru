@@ -6,7 +6,7 @@ module.exports = {
   title: 'Блог айтишника',
   subtitle: '',
   copyright: '©',
-  disqusShortname: '',
+  disqusShortname: 'procomp-blog-ru',
   postsPerPage: 10,
   googleAnalyticsId: '',
   useKatex: false,
