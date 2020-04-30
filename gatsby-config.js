@@ -204,5 +204,11 @@ module.exports = {
     },
     'gatsby-plugin-flow',
     'gatsby-plugin-optimize-svgs',
+    {
+      resolve: 'gatsby-plugin-google-adsense',
+      options: {
+        publisherId: 'pub-8763763111787190'
+      },
+    },
   ]
 };
