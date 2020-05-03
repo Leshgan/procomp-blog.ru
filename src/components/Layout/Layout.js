@@ -6,6 +6,7 @@ import type { Node as ReactNode } from 'react';
 import { useSiteMetadata } from '../../hooks';
 import styles from './Layout.module.scss';
 import Footer from './Footer';
+import Search from '../Search/Search';
 
 type Props = {
   children: ReactNode,
@@ -27,6 +28,7 @@ const Layout = ({
   return (
     <>
       <div className={styles.layout}>
+        <Search />
         <Helmet>
           <html lang="ru" />
           <title>{title}</title>
