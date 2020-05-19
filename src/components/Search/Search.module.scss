@@ -1,124 +1,75 @@
 @import '../../assets/scss/variables';
 
+$width: 300px;
+
+.search-container {
+  position: absolute;
+  top: 5px;
+  right: 20px;
+}
+
 .search-form {
-  position: absolute;
-  height: 20px;
-  width: 300px;
-  margin-left: 170px;
-  top: 20px;
-  right: 50px;
+  margin-left: auto;
+  display: flex;
 }
 
-.search-input {
-  box-sizing: border-box;
-  width: 20px;
-  height: 20px;
-  border: 2px solid $color-gray;
-  border-radius: 50%;
-  background: none;
-  color: $color-base;
-  font-size: 16px;
-  font-weight: 400;
-  font-family: Roboto;
-  outline: 0;
-  -webkit-transition: width 0.2s ease-in-out, height 0.2s ease-in-out, border-radius 0.4s ease-in-out, padding 0.2s;
-  transition: width 0.2s ease-in-out, height 0.2s ease-in-out, border-radius 0.4s ease-in-out, padding 0.2s;
-  -webkit-transition-delay: 0.2s;
-  transition-delay: 0.2s;
-  -webkit-transform: translate(-100%, -50%);
-  -ms-transform: translate(-100%, -50%);
-  transform: translate(-100%, -50%);
+.input-search {
+  opacity: 0;
+  width: 0;
+  height: 24px;
+  visibility: hidden;
+  transition: width 0.5s, opacity 0.8s linear, visibility 0.5s;
 }
 
-.search-button {
-  background: none;
-  position: absolute;
-  top: 0px;
-  left: 0;
-  height: 20px;
-  width: 20px;
-  padding: 0;
-  border-radius: 100%;
-  outline: 0;
-  border: 0;
-  color: inherit;
+.btn-search {
+  width: 24px;
+  height: 24px; 
+}
+
+.btn-search:hover {
   cursor: pointer;
-  -webkit-transition: 0.2s ease-in-out;
-  transition: 0.2s ease-in-out;
-  -webkit-transform: translate(-100%, -50%);
-  -ms-transform: translate(-100%, -50%);
-  transform: translate(-100%, -50%);
-
-  &::before {
-    content: "";
-    position: absolute;
-    width: 10px;
-    height: 2px;
-    background-color: $color-gray;
-    -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg);
-    margin-top: 12px;
-    margin-left: 5px;
-    -webkit-transition: 0.2s ease-in-out;
-    transition: 0.2s ease-in-out;
-    }
 }
 
-.close {
-  // -webkit-transition: 0.2s ease-in-out;
-  // transition: 0.2s ease-in-out;
-  // -webkit-transition-delay: 0.2s;
-  // transition-delay: 0.2s;
-
-  &::before {
-    content: "";
-    position: absolute;
-    width: 15px;
-    height: 2px;
-    margin-top: 0;
-    margin-left: -13px;
-    background-color: $color-gray;
-    -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg);
-    -webkit-transition: 0.2s ease-in-out;
-    transition: 0.2s ease-in-out;
-  }
-
-  &::after {
-    content: "";
-    position: absolute;
-    width: 15px;
-    height: 2px;
-    background-color: $color-gray;
-    margin-top: 0;
-    margin-left: -13px;
-    cursor: pointer;
-    -webkit-transform: rotate(-45deg);
-    -ms-transform: rotate(-45deg);
-    transform: rotate(-45deg);
-  }
+.search-suggestions {
+  opacity: 0;
+  width: 0;
+  border: 1px solid #ccc;
+  height: auto;
+  padding: 0px;
+  margin: 0px;
+  transition: width 0.5s, opacity 0.8s linear, visibility 0.5s;
 }
 
-.square {
-  box-sizing: border-box;
-  padding: 0 40px 0 10px;
+.suggestion-item {
+ background-color: #fff;
+ color: #000;
+ font-size: 12px; 
+ font-family: arial;
+ font-weight: normal;
+ padding: 0 10px;
+ margin: 0px;
+ line-height: 25px;
+ display: block;
+ cursor: pointer;
+}
+
+.suggestion-item:hover {
+ background-color: #ccc;
+ color: #000;
+ text-decoration: normal;
+}
+
+ul.suggestions li:hover .suggested_input{
+ background-color:#FAFFBD;
+ border:1px solid #3C8DBC;
+}
+
+
+
+
+.search-active {
   width: 300px;
-  height: 30px;
-  border: 0;
-  border-radius: 0;
-  background: $color-gray-bg;
-  color: $color-base;
-  font-family: Roboto;
-  font-size: $typographic-base-font-size;
-  font-weight: 400;
-  outline: 0;
-  -webkit-transition: width 0.2s ease-in-out, height 0.2s ease-in-out, border-radius 0.2s ease-in-out, padding 0.2s;
-  transition: width 0.2s ease-in-out, height 0.2s ease-in-out, border-radius 0.2s ease-in-out, padding 0.2s;
-  -webkit-transition-delay: 0.2s, 0s, 0.2s;
-  transition-delay: 0.2s, 0s, 0.2s;
-  -webkit-transform: translate(-100%, -50%);
-  -ms-transform: translate(-100%, -50%);
-  transform: translate(-100%, -50%);
+  opacity: 1;
+  visibility: visible;
+  
 }

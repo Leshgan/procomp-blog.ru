@@ -13,9 +13,16 @@ const Search = () => {
     'search-button': true,
     close: visibleInput,
   });
+
   const inputClass = cx({
-    'search-input': true,
-    square: visibleInput,
+    'input-search': true,
+    'search-active': visibleInput
+    // square: visibleInput,
+  });
+
+  const suggestionsClass = cx({
+    'search-suggestions': true,
+    'search-active': visibleInput
   });
 
   const handleClick = async () => {
@@ -24,19 +31,32 @@ const Search = () => {
     inputElement.current.focus();
   };
 
-  return (
-    <form className={styles['search-form']}>
-      <input type="text" 
-        value={searchValue}
-        ref={inputElement}
-        className={inputClass}
-        disabled={!visibleInput}
-        onChange={(event) => setSearchValue(event.target.value)}
-        onTransitionEnd={(event) => console.log(event)}
-      />
-      <button type="reset" className={buttonClass} onClick={handleClick}></button>
-    </form>
+  const search = (
+    <div className={styles['search-container']}>
+      <form className={styles['search-form']}>
+        <input
+          type="text"
+          ref={inputElement}
+          className={inputClass}
+        />
+        <img
+          id="btn"
+          className={styles['btn-search']}
+          src="./media/search.png"
+          alt=""
+          onClick={handleClick}
+        />
+      </form>
+      <ul className={suggestionsClass}>
+        <li className={styles['suggestion-item']}>option 1</li>
+        <li className={styles['suggestion-item']}>option 2</li>
+        <li className={styles['suggestion-item']}>option 3</li>
+        <li className={styles['suggestion-item']}>option 4</li>
+      </ul>
+    </div>
   );
+
+  return search;
 };
 
 export default Search;
