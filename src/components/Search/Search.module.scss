@@ -6,6 +6,7 @@ $width: 300px;
   position: absolute;
   top: 5px;
   right: 20px;
+  z-index: 100;
 }
 
 .search-form {
@@ -17,8 +18,12 @@ $width: 300px;
   opacity: 0;
   width: 0;
   height: 24px;
+  border: 1px solid transparent;
+  border-bottom: 1px solid #666;
   visibility: hidden;
-  transition: width 0.5s, opacity 0.8s linear, visibility 0.5s;
+  transition: width 0.3s, opacity 0.5s linear, visibility 0.5s;
+  outline: none;
+  font-size: 1em;
 }
 
 .btn-search {
@@ -37,7 +42,7 @@ $width: 300px;
   height: auto;
   padding: 0px;
   margin: 0px;
-  transition: width 0.5s, opacity 0.8s linear, visibility 0.5s;
+  transition: width 0.3s, opacity 0.5s linear, visibility 0.5s;
 }
 
 .suggestion-item {
@@ -46,30 +51,22 @@ $width: 300px;
  font-size: 12px; 
  font-family: arial;
  font-weight: normal;
- padding: 0 10px;
+ padding: 10px;
  margin: 0px;
  line-height: 25px;
  display: block;
  cursor: pointer;
+ border-bottom: 1px solid #ccc;
 }
 
-.suggestion-item:hover {
- background-color: #ccc;
- color: #000;
- text-decoration: normal;
+.suggestion-link {
+  color: $color-base;
+  font-size: medium;
 }
-
-ul.suggestions li:hover .suggested_input{
- background-color:#FAFFBD;
- border:1px solid #3C8DBC;
-}
-
-
 
 
 .search-active {
   width: 300px;
   opacity: 1;
   visibility: visible;
-  
 }
