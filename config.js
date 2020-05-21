@@ -10,6 +10,7 @@ module.exports = {
   postsPerPage: 10,
   googleAnalyticsId: '',
   useKatex: false,
+  description: 'Личный опыт в программировании, системном администрировании Windows, работе с железом компьютера',
   menu: [
     {
       label: 'Статьи',
