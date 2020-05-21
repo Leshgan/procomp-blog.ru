@@ -14,11 +14,11 @@ type Props = {
 };
 
 const PageTemplate = ({ data }: Props) => {
-  const { title: siteTitle, subtitle: siteSubtitle } = useSiteMetadata();
+  const { title: siteTitle, subtitle: description } = useSiteMetadata();
   const { html: pageBody } = data.markdownRemark;
   const { frontmatter } = data.markdownRemark;
   const { title: pageTitle, description: pageDescription } = frontmatter;
-  const metaDescription = pageDescription !== null ? pageDescription : siteSubtitle;
+  const metaDescription = pageDescription !== null ? pageDescription : description;
 
   return (
     <Layout title={`${pageTitle} - ${siteTitle}`} description={metaDescription}>
