@@ -4,7 +4,7 @@ comments: true
 date: 2019-04-02 13:42:59+00:00
 template: "post"
 draft: false
-link: /news/tixij-zvuk-v-macbook-pro/
+link: /news/tixij-zvuk-v-macbook-pro
 slug: tixij-zvuk-v-macbook-pro
 title: Тихий звук в Macbook Pro
 description: "Если со временем звук становится тихим"

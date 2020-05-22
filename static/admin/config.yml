@@ -9,6 +9,10 @@ public_folder: "/media"
 # see: https://www.netlifycms.org/docs/configuration-options/#publish-mode
 publish_mode: editorial_workflow
 
+slug:
+  encoding: "ascii"
+  clean_accents: true
+
 collections:
   - name: "posts"
     label: "Posts"
