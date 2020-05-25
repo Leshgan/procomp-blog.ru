@@ -1,13 +1,14 @@
 
 import React, { useState, useRef, useEffect } from 'react';
 import classNames from 'classnames/bind';
-import { Link } from 'gatsby';
+import { Link, navigate } from 'gatsby';
 import styles from './Search.module.scss';
 
 const Search = () => {
   const [visibleInput, setVisibleInput] = useState(false);
   const [searchQuery, setSearchQuery] = useState('');
   const [searchResults, setSearchResults] = useState([]);
+  const [cursor, setCursor] = useState(-1);
   const inputElement = useRef(null);
   const wrapper = useRef(null);
   const cx = classNames.bind(styles);
@@ -69,6 +70,19 @@ const Search = () => {
     }
   };
 
+  const handleSearchKeyDown = (event) => {
+    if (event.keyCode === 38) {
+      setCursor(cursor > -1 ? cursor - 1 : searchResults.length - 1);
+    }
+    if (event.keyCode === 40) {
+      setCursor((cursor + 1) % searchResults.length);
+    }
+    if (event.keyCode === 13) {
+      // enter pressed
+      navigate(searchResults[cursor].link);
+    }
+  };
+
   const getResults = (query) => {
     const res = [];
     ['ru', 'en'].forEach(lang => {
@@ -79,19 +93,24 @@ const Search = () => {
       });
     });
     // find the unique ids of the nodes
-    return Array.from(new Set(res))
-      .slice(0, 10); // first 10 results
+    return Array.from(new Set(res)); // first 10 results
   };
 
   const renderSearchResults = () => {
     return searchResults && searchResults.length
       ? (
         <ul className={suggestionsClass}>
-          {searchResults.map(({ link, title }) => (
-            <li className={styles['suggestion-item']} key={link}>
-              <Link to={link} className={styles['suggestion-link']}>{title}</Link>
-            </li>
-          ))}
+          {searchResults.map(({ link, title }, index) => {
+            const liClass = cx({
+              'suggestion-item': true,
+              selected: index === cursor,
+            });
+            return (
+              <li className={liClass} key={link}>
+                <Link to={link} className={styles['suggestion-link']}>{title}</Link>
+              </li>
+            );
+          })}
         </ul>
       )
       : null;
@@ -112,6 +131,7 @@ const Search = () => {
           className={inputClass}
           value={searchQuery}
           onChange={handleSearchInput}
+          onKeyDown={handleSearchKeyDown}
         />
         <img
           id="btn"
