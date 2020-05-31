@@ -14,4 +14,4 @@ tags:
 - Linux
 ---
 
-Еще одна небольшая шпаргалка. Очень помогла [эта](http://www.k-max.name/linux/prava-dostupa-v-linux-eshhe-odna-malenkaya-shpargalka/) статья при работе с правами доступа в Linux
+Еще одна небольшая шпаргалка. Очень помогла [эта](https://www.k-max.name/linux/prava-dostupa-v-linux-eshhe-odna-malenkaya-shpargalka/) статья при работе с правами доступа в Linux

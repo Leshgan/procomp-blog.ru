@@ -28,6 +28,6 @@ tags:
 Всё, теперь данные выводятся в верной кодировке. 
 Вообще-то эта проблема имеет и другие корни с соответственно другими методами решения. Более подробно о проблемах с кодировками в MySQL можно почитать в следующих источниках:
 
-1. [phpMyadmin по-русски](http://php-myadmin.ru/learning/mysql-cir.html). Очень доходчиво, по полочкам все разложено и в доступной краткой форме.
+1. [phpMyadmin по-русски](https://php-myadmin.ru/learning/mysql-cir.html). Очень доходчиво, по полочкам все разложено и в доступной краткой форме.
 2. [PHP FAQ](http://www.phpfaq.ru/charset). Так же полезная информация, но еще рассказывается что делать если требуется перекодировка данных.
-3. [Linux.by wiki pages](http://www.linux.by/wiki/index.php/FAQ_PHP_MySQL_charset). А это вообще целый вики на эту тему.
+3. [Linux.by wiki pages](https://www.linux.by/wiki/index.php/FAQ_PHP_MySQL_charset). А это вообще целый вики на эту тему.

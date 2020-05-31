@@ -65,8 +65,8 @@ mount -t ext3 /dev/sdb1 /media/backup
 
 ---
 В освоении помогли следующие статьи:
-1. [Монтирование разделов и дисков в Linux](http://mydebianblog.blogspot.com/2008/09/linux.html)
+1. [Монтирование разделов и дисков в Linux](https://mydebianblog.blogspot.com/2008/09/linux.html)
 2. [Как подключить жесткий диск (винчестер) в Debian GNU/Linux](http://www.strizhkov.ru/archives/74)
-3. [cfdisk и mkfs: разметка и форматирование разделов в Linux](http://mydebianblog.blogspot.com/2008/10/cfdisk-mkfs-linux.html)
+3. [cfdisk и mkfs: разметка и форматирование разделов в Linux](https://mydebianblog.blogspot.com/2008/10/cfdisk-mkfs-linux.html)
 
 

@@ -14,16 +14,16 @@ tags:
 - Вирусы
 ---
 
-Новый год начался весело. Проник вирус Win32.Sality.aa  по классификации [AVP](http://www.securelist.com/ru/descriptions/7196714/Virus.Win32.Sality.aa), он же Win32.Sector.8, Win32.Sector.8, Win32.Sector.9, Win32.Sector.10, Win32.Sector.12, Win32.Sector.17 по классификации Dr.Web.
+Новый год начался весело. Проник вирус Win32.Sality.aa, он же Win32.Sector.8, Win32.Sector.8, Win32.Sector.9, Win32.Sector.10, Win32.Sector.12, Win32.Sector.17 по классификации Dr.Web.
 
-Я не заметил каких-либо особо вредных действий этого вируса, за исключением невозможности редактирования реестра в инфицированном компьютере (regedit не запускается), а так же невозможность запуска Диспетчера задач (taskmgr.exe). Эти процессы блокируются вирусом. Подробнее о действии этого вируса можно почитать в вирусной энциклопедии Касперского ([прямой линк на описание](http://www.securelist.com/ru/descriptions/7196714/Virus.Win32.Sality.aa)).  Методы борьбы тоже разные и их можно найти в интернете.
+Я не заметил каких-либо особо вредных действий этого вируса, за исключением невозможности редактирования реестра в инфицированном компьютере (regedit не запускается), а так же невозможность запуска Диспетчера задач (taskmgr.exe). Эти процессы блокируются вирусом. Подробнее о действии этого вируса можно почитать в вирусной энциклопедии Касперского.  Методы борьбы тоже разные и их можно найти в интернете.
 
 Я опишу свой способ.
 
 Для удаления потребуются следующие бесплатные  программы:
-  1. **Dr.Web CureIt** (качать [отсюда](http://www.freedrweb.com/download+cureit/))
-  2. Утилита от Касперского **SalityKiller.zip** (качать [отсюда](http://support.kaspersky.ru/downloads/utils/salitykiller.zip))
-  3. Восстановление реестра **Sality_RegKeys.zip** (качать [отсюда](http://support.kaspersky.ru/downloads/utils/sality_regkeys.zip))
+  1. **Dr.Web CureIt** (качать [отсюда](https://free.drweb.ru/cureit/))
+  2. Утилита от Касперского (качать [отсюда](https://support.kaspersky.ru/viruses/utility))
+  3. Восстановление реестра **Sality_RegKeys.zip** (качать [отсюда](https://support.kaspersky.ru/downloads/utils/sality_regkeys.zip))
 
 Распаковываем утилиту **SalityKiller.zip** в любую папку и получаем файл **SalityKiller.exe**. предположим распакуем в папку c:\temp
 

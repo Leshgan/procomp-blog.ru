@@ -21,7 +21,7 @@ Clipboard.AsText := str;
 ```
 работает если копируется строка с английскими символами и/или цифрами. 
 Строка из русских букв будет скопирована в неверной кодировке. 
-Вот [тут](http://www.sql.ru/forum/852176-1/pravilnoe-kopirovanie-v-bufer-obmena) нашел простое решение:
+Вот [тут](https://www.sql.ru/forum/852176-1/pravilnoe-kopirovanie-v-bufer-obmena) нашел простое решение:
 ```pascal
 type
     TMyClipboard = class(TClipboard);

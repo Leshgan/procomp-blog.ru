@@ -80,6 +80,6 @@ modprobe modprobe ip_nat_ftp; modprobe nf_conntrack_ftp
 Для составления статьи помогли ресурсы:
 
 1. [Обеспечение централизованного выхода в Интернет при помощи Linux.](http://www.yar-fdd.ru/kollegam/item/21-linux-server-1)
-2. [Linux. Настройка роутера (NAT + DHCP + Squid)](http://interface31.ru/tech_it/2009/11/linux-nastrojka-routera-nat-dhcp-squid.html)
+2. [Linux. Настройка роутера (NAT + DHCP + Squid)](https://interface31.ru/tech_it/2009/11/linux-nastrojka-routera-nat-dhcp-squid.html)
 
 

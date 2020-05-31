@@ -17,7 +17,7 @@ tags:
 Статья-шпаргалка, для себя.
 Настройка сетевых интерфейсов:
 - команда **`ifconfig`** показывает информацию о сетевых интерфейсах
-- **`sudo infonfig eth0 up`** запускает интерфейс eth0. [Тут](http://www.guruadmin.ru/page/ifconfig-7-examples-to-configure-network-interface) 7 примеров использования.
+- **`sudo infonfig eth0 up`** запускает интерфейс eth0. [Тут](https://www.guruadmin.ru/page/ifconfig-7-examples-to-configure-network-interface) 7 примеров использования.
 - **`sudo /etc/init.d/networking restart`** перезапускает сетевую службу и применяются все настройки
 - настройки сетевых интерфейсов находятся в файле **`/etc/network/interfaces`**
 

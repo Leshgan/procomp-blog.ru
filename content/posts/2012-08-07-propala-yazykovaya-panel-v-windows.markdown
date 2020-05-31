@@ -36,6 +36,6 @@ Windows Registry Editor Version 5.00
 И сохраните его под именем Run с расширением reg. После чего дважды кликните левой кнопкой мыши на получившемся файле Run.reg и ответьте «Да» на вопрос системы. Затем перезагрузите компьютер.
 
 Ссылки по теме:
-1. [Пропадает языковая панель  на CyberForum.ru](http://www.cyberforum.ru/windows7/thread151918-page4.html)
+1. [Пропадает языковая панель  на CyberForum.ru](https://www.cyberforum.ru/windows7/thread151918-page4.html)
 2. [Windows 7: пропала языковая панель. Что делать? на bloggik.net](http://www.bloggik.net/index.php/problems-and-solutions/1-windows-problem/198-problems-solutions-windows-7-missing-language-bar)
 3. [Исчезла языковая панель? Восстановить легко! на wseven.info](http://www.wseven.info/ctfmon/)
