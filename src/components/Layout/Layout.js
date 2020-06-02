@@ -35,6 +35,8 @@ const Layout = ({
           <meta name="description" content={description} />
           <meta property="og:site_name" content={title} />
           <meta property="og:image" content={metaImageUrl} />
+          <meta name="google-site-verification" content="tjpAzG6DzAVzAZudOnLkqNcGUSWXMg8lnzfd_Dxa1vU" />
+          <meta name="yandex-verification" content="dc9405a4061fd035" />
         </Helmet>
         {children}
       </div>
