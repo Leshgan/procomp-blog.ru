@@ -136,7 +136,7 @@ const Search = () => {
         <img
           id="btn"
           className={styles['btn-search']}
-          src={visibleInput ? './media/close.png' : './media/search.png'}
+          src={visibleInput ? '/media/close.png' : '/media/search.png'}
           alt=""
           onClick={handleClick}
         />
